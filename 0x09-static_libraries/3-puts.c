@@ -2,16 +2,16 @@
 
 /**
  * _puts - Prints a string, followed by a new line, to stdout
- * @str: The string
+ * @str: The string to print
+ * Return: void
  */
-void _puts(char *str)
-{
-	int i = 0;
 
-	while (str[i])
+void _puts(char *str)
+
+{
+	for (; *str != '\0'; str++)
 	{
-		_putchar(str[i]);
-		i++;
+	_putchar(*str);
 	}
 	_putchar('\n');
 }
